@@ -1,2 +1,2 @@
-# cache-bust: 2026-07-13-0329
+# cache-bust: v3.0 2026-07-13
 FROM eiomsirius/milkdrop-render:latest
