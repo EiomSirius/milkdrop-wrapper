@@ -1,4 +1,4 @@
-# Pinned to exact digest (not :latest) so Coolify's docker build (which skips --pull)
-# always gets the correct image even after docker pull on the host.
-# New digest after ffmpeg + sequential-render fix on 2026-07-13.
-FROM eiomsirius/milkdrop-render@sha256:1b26c10b99d4bda137c040e282d9ed6b09a09ce8bd40931fcb84ed3941244ea9
+# Pinned to exact digest to bypass Coolify docker build --pull cache.
+# v2.5: sequential chunked render + real progress via chunk_*.done markers.
+# Build from 2026-07-13T01:03:51 UTC after commit e79b522.
+FROM eiomsirius/milkdrop-render@sha256:204fbf5380d5e853250f04f48e3ec3f3e6c5f1aed8c8b44e38a91f96e9ddee7f
